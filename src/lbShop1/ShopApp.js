@@ -19,15 +19,8 @@ const ShopApp = () => {
             <StateProvider initialState={initialState} reducer={reducer}>
                 <Header />
                 <Switch>
-                    <Route path="/tienda">
-                        <Shop />
-                    </Route>
-                    <Route>
-                        <NotFound />
-                    </Route>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
+                    <Route path="/tienda" component={Shop} />
+                    <Route exact path="/" component={Home} />
                 </Switch>
             </StateProvider>
         </div>
