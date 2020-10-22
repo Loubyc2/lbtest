@@ -21,6 +21,7 @@ const ShopApp = () => {
                 <Switch>
                     <Route path="/tienda" component={Shop} />
                     <Route exact path="/" component={Home} />
+                    <Route component={NotFound} />
                 </Switch>
             </StateProvider>
         </div>
