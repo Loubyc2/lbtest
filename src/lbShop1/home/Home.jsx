@@ -87,7 +87,7 @@ function Home() {
                     </div>
                     <div className="footer-right">
                         <h4>Nuestro Newsletter</h4>
-                        <form className="footer-search">
+                        <form className="footer-search" netlify>
                             <input type="text" placeholder="Ingresa tu e-mail" />
                             <span>Enviar</span>
                         </form>
