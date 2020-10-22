@@ -10,7 +10,7 @@ function Shop() {
                 </div>
                 <div className="shop__banner-center">
                     <div className="banner__top">
-                        <h1 className="mt-3">Tienda</h1>
+                        <h1 className="mt-3">Tiendas</h1>
                     </div>
                     <div className="banner__bottom">
                         <img className="shop__banner-img-bottom" src={require("./img/banner-7.jpg")} alt="" />
