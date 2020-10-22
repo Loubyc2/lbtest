@@ -11,7 +11,7 @@ import { StateProvider } from './StateProvider';
 import Shop from './Shop';
 
 
-const NotFound = () => <h1>Not Found</h1>
+const NotFound = () => <h1 style={{ color: 'steelblue' }}>Not Found</h1>
 
 const ShopApp = () => {
     return (
