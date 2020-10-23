@@ -1,53 +1,111 @@
-.shop__banner {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 500px;
-    overflow: hidden;
-    padding: 40px 6rem;
-    background-color: #dddddd;
+.shop {
+    height: 100vh;
 }
 
-.shop__banner-left,
-.shop__banner-right {
-    width: 100%;
+.shop__banner {
+    padding: .5rem 1.5rem;
     display: flex;
-    justify-content: space-between;
-    height: inherit;
+}
+
+.shop__banner-img-bottom,
+.shop__banner-img {
+    width: 100%;
 }
 
 .shop__banner-center {
-    flex: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    height: inherit;
+    justify-content: flex-end;
+    margin: 0 1rem;
 }
 
-.banner__top {
-    flex: 1;
-    display: flex;
-    height: 100px;
-    justify-content: center;
-}
-
-.banner__top>h1 {
+.shop__banner-center>h1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     text-transform: uppercase;
-    font-size: 60px;
+    font-family: "Montserrat";
+    font-size: 56px;
+    text-align: center;
 }
 
-.banner__bottom {
-    width: 100%;
+
+/* Shop Main */
+
+.shop__main {
+    margin-top: 25px;
     display: flex;
+    width: 100%;
+}
+
+.shop__right {
+    background-color: red;
+    width: 80%;
+    padding: 5px;
+}
+
+.shop__aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 10px 10px 10px 20px;
 }
 
-.shop__banner-img {
-    flex: 1;
-    object-fit: cover;
+.aside__search {
+    border: 1px solid rgb(226, 224, 224);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-.shop__banner-img-bottom {
-    flex: 1;
-    object-fit: cover;
+.aside__search>h6,
+.aside__filter>h6,
+.aside__categoria>h6 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #6e6e6e;
+    font-weight: 400;
+}
+
+.aside__search>input {
+    background-color: #d9d9d9;
+    border: none;
+}
+
+.aside__search>input:focus {
+    outline: none;
+}
+
+.aside__search>span {
+    padding: 1px 6px;
+    background-color: steelblue;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: flex;
+    color: #fff;
+    width: 20%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.aside__filter {
+    border: 1px solid rgb(226, 224, 224);
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.aside__categoria {
+    border: 1px solid rgb(226, 224, 224);
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.aside__categoria input[type='checkbox'] {
+    background-color: red;
+    margin-right: 10px;
 }

@@ -11,7 +11,9 @@ import { StateProvider } from './StateProvider';
 import Shop from './Shop';
 
 
-const NotFound = () => <h1 style={{ color: 'steelblue' }}>Not Found</h1>
+const NotFound = () => <h1 style={{ color: 'steelblue' }}>I m The Not Found Page</h1>
+const Contact = () => <h1 style={{ color: 'steelblue' }}>I m The Contact Page</h1>
+const Page = () => <h1 style={{ color: 'steelblue' }}>I m The Page "Page"</h1>
 
 const ShopApp = () => {
     return (
@@ -19,7 +21,9 @@ const ShopApp = () => {
             <StateProvider initialState={initialState} reducer={reducer}>
                 <Header />
                 <Switch>
-                    <Route path="/tienda" component={Shop} />
+                    <Route path="/shop" component={Shop} />
+                    <Route exact path="/pages" component={Page} />
+                    <Route exact path="/contact" component={Contact} />
                     <Route exact path="/" component={Home} />
                     <Route component={NotFound} />
                 </Switch>

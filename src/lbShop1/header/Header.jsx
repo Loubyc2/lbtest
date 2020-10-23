@@ -51,9 +51,9 @@ function Header() {
                     </Link>
                     <ul className="header__bottom-links">
                         <NavLink to="/"><li>Inicio</li></NavLink>
-                        <NavLink to="/tienda"><li>Tienda</li></NavLink>
-                        <NavLink to="/"><li>Paginas</li></NavLink>
-                        <NavLink to="/"><li>Contactos</li></NavLink>
+                        <NavLink to="/shop"><li>Tienda</li></NavLink>
+                        <NavLink to="/pages"><li>Paginas</li></NavLink>
+                        <NavLink to="/contact"><li>Contactos</li></NavLink>
                     </ul>
                 </nav>
                 <div className={show ? "header__bottom-right" : "header__bottom-right active"}>

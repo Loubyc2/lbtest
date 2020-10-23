@@ -10,6 +10,7 @@
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    object-fit: contain;
 }
 
 .home__fashion-kids,

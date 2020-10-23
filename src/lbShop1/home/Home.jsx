@@ -15,7 +15,7 @@ function Home() {
             <div className="home__fasion">
                 <div
                     style={{
-                        backgroundImage: `url("http://demo.joomshaper.com/2017/shopin/images/demo/product-details-ad-01.jpg")`,
+                        backgroundImage: `url(${require("../img/banner-4.jpg")})`,
                         backgroundPosition: 'center center'
                     }}
                     className="home__fashion-women"
