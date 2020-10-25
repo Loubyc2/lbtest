@@ -50,10 +50,10 @@ function Header() {
                         <h1 className="header__top-logo bottom">Lb Design <strong>fashion</strong></h1>
                     </Link>
                     <ul className="header__bottom-links">
-                        <NavLink to="/"><li>Inicio</li></NavLink>
-                        <NavLink to="/shop"><li>Tienda</li></NavLink>
-                        <NavLink to="/pages"><li>Paginas</li></NavLink>
-                        <NavLink to="/contact"><li>Contactos</li></NavLink>
+                        <NavLink exact to="/" activeStyle={{ color: '#b4d2ee ' }}><li>Inicio</li></NavLink>
+                        <NavLink to="/shop" activeStyle={{ color: '#b4d2ee ' }}><li>Tienda</li></NavLink>
+                        <NavLink to="/pages" activeStyle={{ color: '#b4d2ee ' }}><li>Paginas</li></NavLink>
+                        <NavLink to="/contact" activeStyle={{ color: '#b4d2ee ' }}><li>Contactos</li></NavLink>
                     </ul>
                 </nav>
                 <div className={show ? "header__bottom-right" : "header__bottom-right active"}>

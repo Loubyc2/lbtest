@@ -1,7 +1,3 @@
-.shop {
-    height: 100vh;
-}
-
 .shop__banner {
     padding: .5rem 1.5rem;
     display: flex;
@@ -23,6 +19,7 @@
 .shop__banner-center>h1 {
     position: absolute;
     top: 0;
+    color: #e75054;
     right: 0;
     left: 0;
     text-transform: uppercase;
@@ -41,7 +38,6 @@
 }
 
 .shop__right {
-    background-color: red;
     width: 80%;
     padding: 5px;
 }
@@ -50,7 +46,7 @@
     width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px 10px 10px 20px;
 }
 
@@ -93,19 +89,170 @@
     cursor: pointer;
 }
 
+.aside__categoria,
 .aside__filter {
     border: 1px solid rgb(226, 224, 224);
     margin: 10px 0;
-    padding: 5px;
+    padding: 12px 5px;
 }
 
-.aside__categoria {
-    border: 1px solid rgb(226, 224, 224);
-    margin: 10px 0;
-    padding: 5px;
+.aside__categoria>h6,
+.aside__filter>h6 {
+    text-align: center;
+    padding: 2px 5px;
+    color: #d9d9d9;
+    background-color: rgb(70, 68, 68);
 }
 
 .aside__categoria input[type='checkbox'] {
-    background-color: red;
     margin-right: 10px;
+}
+
+.aside__categoria>p {
+    margin-bottom: 0;
+}
+
+.aside__filter-size>p {
+    margin-bottom: 5px;
+    color: #7D7F7C;
+    cursor: pointer;
+}
+
+.aside__filter-size>p:hover {
+    color: #464646;
+}
+
+
+/* Shop Right */
+
+.shop__right {
+    padding: 10px;
+}
+
+.shop__right-header {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f8678f;
+    padding: 0 15px;
+    justify-content: space-evenly;
+    width: 145px;
+    margin-left: 24px;
+}
+
+.shop__right-header-icon {
+    margin-right: -6px;
+}
+
+.shop__right-header>span {
+    color: #d4d4d4;
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-left: -6px;
+}
+
+.shop__product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.shop__product-img {
+    margin: 5px;
+    width: 330px;
+}
+
+@media only screen and (max-device-width: 685px) {
+    .shop__banner {
+        padding: .5rem 1.5rem;
+        display: none;
+    }
+    .shop__banner-img-bottom,
+    .shop__banner-img {
+        width: 100%;
+    }
+    .shop__banner-center {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 1rem;
+    }
+    .shop__banner-center>h1 {
+        position: absolute;
+        top: 0;
+        color: #e75054;
+        right: 0;
+        left: 0;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        font-size: 56px;
+        text-align: center;
+    }
+    /* Shop Main */
+    .shop__main {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .shop__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .shop__aside {
+        display: none;
+    }
+    /* Shop Right */
+    .shop__right-header {
+        display: inline-flex;
+        align-items: center;
+        background-color: #f8678f;
+        padding: 0;
+        justify-content: center;
+        width: 80%;
+        margin-left: 0;
+        margin: auto;
+        height: 50px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .shop__right-header-icon {
+        margin-right: 1px !important;
+    }
+    .shop__right-header>span {
+        color: #d4d4d4;
+        font-family: "Montserrat";
+        font-size: 40px;
+        margin-left: 7px;
+    }
+    .shop__product {
+        display: inline !important;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .shop__product>div {
+        display: block !important;
+        text-align: center;
+        width: 100%;
+    }
+    .shop__product-img {
+        margin: 10px 0;
+        object-fit: contain !important;
+        width: 80%;
+    }
+    footer {
+        background-color: rgb(66, 59, 59);
+        height: auto;
+        color: #fff;
+    }
+    .footer-search>input {
+        background-color: #fff;
+    }
 }
